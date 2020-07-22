@@ -1,0 +1,40 @@
+import NextLink from 'next/link';
+
+const canPrefetch = (href) => {
+  if (!href || !href.startsWith('/')) {
+    return false;
+  }
+
+  return true;
+};
+
+const Link = ({
+  external,
+  href,
+  as,
+  passHref,
+  children,
+
+  // Styling
+  underline,
+  gray,
+  ...props
+}) => {
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <>
+      <NextLink href={href} as={as} prefetch={canPrefetch(href) ? undefined : false} passHref={passHref}>
+        {passHref ? children : <a {...props}>{children}</a>}
+      </NextLink>
+    </>
+  );
+};
+
+export default Link;
