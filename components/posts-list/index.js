@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import styles from './posts-list.module.css';
 import TextEntry from '../entry/text';
 
 const Posts = ({ slug, posts, paginate }) => {
@@ -7,7 +8,7 @@ const Posts = ({ slug, posts, paginate }) => {
 
   return (
     <>
-      <ul>
+      <ul className={styles.container}>
         {posts.slice(0, paginate ? showMore : undefined).map((post) => {
           return (
             <TextEntry
@@ -15,6 +16,7 @@ const Posts = ({ slug, posts, paginate }) => {
               href="/[slug]"
               as={`/${post.slug}`}
               title={`${post.title}`}
+              body={`${post.body}`}
               category={post.category}
             />
           );

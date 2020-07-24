@@ -8,7 +8,7 @@ const Blog = ({ posts }) => {
   return (
     <Page description="Crispy">
       <article>
-        <PostsList posts={posts} paginate={true} />
+        <PostsList posts={posts} paginate={false} />
       </article>
     </Page>
   );
