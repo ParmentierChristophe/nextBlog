@@ -1,13 +1,16 @@
 import { memo } from 'react';
+import style from './text.module.css';
 
 import Link from '../link';
+import getExcerpt from '../../lib/get-excerpt';
 
-const TextEntry = ({ title, href, as }) => {
+const TextEntry = ({ title, body, href, as }) => {
+  const excerpt = getExcerpt(body, 22);
   return (
-    <li>
-      <Link href={href} as={as} external={!as} title={`${title}`}>
-        <span>{title}</span>
-      </Link>
+    <li className={style.card}>
+      <h2>{title}</h2>
+      <p>{excerpt}...</p>
+      <Link className={style.linkCardPost} href={href} as={as} external={!as} title={`${title}`}></Link>
     </li>
   );
 };
