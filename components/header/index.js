@@ -11,7 +11,17 @@ const Header = ({ slug, title }) => {
           </Link>
         </span>
 
-        <div></div>
+        <div>
+          <a href="https://github.com/ParmentierChristophe">
+            <img className={style.icon} src="/img/GitHub-Mark-32px.png"></img>
+          </a>
+          <a href="https://twitter.com/theCrispydesign">
+            <img className={style.icon} src="/img/twitter.png"></img>
+          </a>
+          <a href="https://www.linkedin.com/in/christophe-parmentier/">
+            <img className={style.icon} src="/img/linkedin.png"></img>
+          </a>
+        </div>
       </div>
     </nav>
   );
