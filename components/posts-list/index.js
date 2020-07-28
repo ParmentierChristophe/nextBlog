@@ -21,14 +21,17 @@ const Posts = ({ slug, posts, paginate }) => {
             />
           );
         })}
-        {paginate && showMore < posts.length && (
-          <button
-            onClick={() => {
-              setShowMore(showMore + 3);
-            }}>
-            Show More
-          </button>
-        )}
+        <div className={styles.buttonContainer}>
+          {paginate && showMore < posts.length && (
+            <button
+              className="button -blue center"
+              onClick={() => {
+                setShowMore(showMore + 3);
+              }}>
+              Show More
+            </button>
+          )}
+        </div>
       </ul>
     </>
   );

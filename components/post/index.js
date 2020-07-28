@@ -11,6 +11,16 @@ const Post = ({ title, slug, html, hidden, description, date, previous, next }) 
         {date && <meta name="date" content={date} />}
       </Head>
 
+      <span>
+        {slug ? (
+          <b>
+            <span> {title} </span>
+          </b>
+        ) : (
+          ''
+        )}
+      </span>
+
       <article
         dangerouslySetInnerHTML={{
           __html: `${html}`,

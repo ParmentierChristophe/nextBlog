@@ -11,7 +11,6 @@
   padding: 2.1rem 3.15rem;
   box-shadow: 0 3px 10px rgba(25, 17, 34, 0.05);
   margin-bottom: 1.314rem;
-  list-style-type: none;
 }
 
 .linkCardPost {
@@ -20,4 +19,25 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.excerpt {
+  font-weight: 400;
+  color: hsl(0, 0%, 45%);
+}
+
+.title {
+  font-weight: 900;
+  color: hsl(0, 0%, 13%);
+}
+
+.cat {
+  position: relative;
+  z-index: 1000;
+  padding: 0.3rem 0.8rem 0.5rem;
+  border-radius: 40px;
+  transition: 0.5s;
+  font-weight: 200;
+  color: #ffffff;
+  background-color: #3dd28d;
 }
