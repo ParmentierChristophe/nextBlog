@@ -1,14 +1,22 @@
 import Link from 'next/link';
 import style from './header.module.css';
+import useTheme from '../../lib/theme';
 
 const Header = ({ slug, title }) => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <nav className={style.navbar}>
       <div className={style.containerNavbar}>
-        <span className={style.brand}>
+        <span className={style.brandContainer}>
           <Link href="/">
-            <a aria-label="Navigate Home">Crispy </a>
+            <a className={style.brand} aria-label="Navigate Home">
+              Crispy{' '}
+            </a>
           </Link>
+          <button onClick={toggleTheme} aria-label="Toggle Theme">
+            AZR
+          </button>
         </span>
 
         <div>
