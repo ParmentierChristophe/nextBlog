@@ -7,7 +7,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #242424;
   transition: 0.5s;
 }
 
@@ -46,8 +45,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex: 0 0 160px;
-
-  box-shadow: 2px 5px 10px #e4e4e4;
 }
 
 .button:focus {
@@ -100,8 +97,8 @@ a:hover {
   --gray: #888;
   --light-gray: #444;
   --lighter-gray: #222;
-  --lightest-gray: #fafafa;
-  --article-color: #020202;
+  --lightest-gray: #1a1a1a;
+  --article-color: #eaeaea;
   --header-bg: rgb(19, 20, 21);
   --gray-alpha: rgba(255, 255, 255, 0.5);
   --selection: rgba(255, 255, 255, 0.99);
@@ -145,6 +142,34 @@ a:hover {
   text-shadow: none;
   background: var(--selection);
   color: var(--bg);
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--fg);
+  font-display: block;
+  font-feature-settings: 'calt' 'case' 'rlig';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  display: flex;
+  flex-direction: column;
+  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
 }
 
 svg {

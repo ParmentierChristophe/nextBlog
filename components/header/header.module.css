@@ -21,11 +21,15 @@
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  color: var(--fg);
   font-weight: bold;
   margin-right: 0.7rem;
   font-size: 23px;
+}
+
+.brandContainer {
+  display: flex;
+  align-items: center;
 }
 
 .icon {
