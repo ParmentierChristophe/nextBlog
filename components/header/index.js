@@ -11,7 +11,7 @@ const Header = ({ slug, title }) => {
         <span className={style.brandContainer}>
           <Link href="/">
             <a className={style.brand} aria-label="Navigate Home">
-              Crispy{' '}
+              Crispy
             </a>
           </Link>
           <button onClick={toggleTheme} aria-label="Toggle Theme">
