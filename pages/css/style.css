@@ -1,4 +1,7 @@
 @import './markdown.css';
+@import './fontawesome.min.css';
+@import './brands.min.css';
+@import './solid.min.css';
 
 body {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -61,6 +64,12 @@ a:hover {
 .button:active {
   transition: all 150ms linear;
   opacity: 0.75;
+}
+
+.icon {
+  color: var(--fg);
+  font-size: 16px;
+  margin: 0 7px;
 }
 
 .-blue {
