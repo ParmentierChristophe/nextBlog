@@ -111,8 +111,8 @@ a:hover {
   --header-bg: rgb(19, 20, 21);
   --gray-alpha: rgba(255, 255, 255, 0.5);
   --selection: rgba(255, 255, 255, 0.99);
-  --accent: #ffe77a;
-  --lighter-accent: #fff3bd;
+  --accent: #7ac1ff;
+  --lighter-accent: #e6e4dd;
   --border: #242424;
 
   /* Syntax Highlighting */
@@ -135,7 +135,7 @@ a:hover {
   --gray-alpha: rgba(19, 20, 21, 0.5);
   --selection: rgba(0, 0, 0, 0.99);
   --accent: #0493d3;
-  --lighter-accent: #1274a0;
+  --lighter-accent: #10425a;
   --border: #fff;
 
   --token: var(--lighter-accent);
