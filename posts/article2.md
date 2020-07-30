@@ -1,5 +1,5 @@
 ---
-title: article2
+title: Article numéro 2 avec un assez long titre
 slug: article2
 date: July 11, 2020
 category: language

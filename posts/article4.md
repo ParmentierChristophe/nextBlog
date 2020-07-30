@@ -1,5 +1,5 @@
 ---
-title: article4
+title: Article numéro quatre avec un assez long titre pour voir si ça depasse
 slug: article4
 date: July 11, 2020
 category: language

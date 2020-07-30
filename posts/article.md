@@ -1,5 +1,5 @@
 ---
-title: article
+title: Article
 slug: article
 date: July 11, 2020
 category: Nodejs

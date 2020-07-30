@@ -1,5 +1,5 @@
 ---
-title: article3
+title: Article numéro trois avec un assez long titre pour voir
 slug: article3
 date: July 11, 2020
 category: language
