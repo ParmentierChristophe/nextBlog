@@ -104,6 +104,7 @@ a:hover {
   --selection: rgba(255, 255, 255, 0.99);
   --accent: #ffe77a;
   --lighter-accent: #fff3bd;
+  --border: #242424;
 
   /* Syntax Highlighting */
   --token: var(--lighter-accent);
@@ -126,6 +127,7 @@ a:hover {
   --selection: rgba(0, 0, 0, 0.99);
   --accent: #0493d3;
   --lighter-accent: #1274a0;
+  --border: #fff;
 
   --token: var(--lighter-accent);
   --comment: #404040;
