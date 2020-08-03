@@ -2,6 +2,7 @@
 @import './fontawesome.min.css';
 @import './brands.min.css';
 @import './solid.min.css';
+@import './syntax.css';
 
 body {
   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -116,11 +117,13 @@ a:hover {
   --border: #242424;
 
   /* Syntax Highlighting */
-  --token: var(--lighter-accent);
+  /* --token: var(--lighter-accent); */
+  --token: #c3e88d;
   --comment: #ccc;
-  --keyword: var(--accent);
-  --name: #fff;
+  --keyword: #c792ea;
+  --name: #82aaff;
   --highlight: #2e2e2e;
+  --operator: #f0896a;
 }
 
 .light {
@@ -138,11 +141,12 @@ a:hover {
   --lighter-accent: #10425a;
   --border: #fff;
 
-  --token: var(--lighter-accent);
+  --token: #0f2f5f;
   --comment: #404040;
-  --keyword: var(--accent);
-  --name: #353535;
+  --keyword: #c7474e;
+  --name: #6848ba;
   --highlight: #eaeaea;
+  --operator: #225ebe;
 }
 
 * {
