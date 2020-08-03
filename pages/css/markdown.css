@@ -100,7 +100,7 @@ article pre {
 }
 
 article code {
-  font-family: Courier New, monospace;
+  font-family: Menlo, Courier New, monospace;
   background-color: var(--lightest-gray);
   border-radius: var(--inline-radius);
 }
