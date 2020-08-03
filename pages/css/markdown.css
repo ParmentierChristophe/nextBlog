@@ -99,6 +99,12 @@ article pre {
   font-size: 0.875rem;
 }
 
+article code {
+  font-family: Courier New, monospace;
+  background-color: var(--lightest-gray);
+  border-radius: var(--inline-radius);
+}
+
 /* Linkable Headers */
 
 .header-link {
@@ -114,5 +120,19 @@ article pre {
 }
 
 .header-link:hover::after {
+  opacity: 1;
+}
+
+article p a {
+  color: var(--accent);
+  font-weight: bold;
+  border-bottom: 3px solid var(--accent);
+  transition: 0.2s;
+}
+
+article p a:hover {
+  opacity: 1;
+  background-color: var(--accent);
+  color: var(--article-color);
   opacity: 1;
 }

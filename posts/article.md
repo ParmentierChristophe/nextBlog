@@ -61,6 +61,8 @@ _This is italic text_
 
 ## Code
 
+du texte normal et avec `du code` au milieu
+
 `rere`
 
 ```js
