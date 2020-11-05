@@ -1,7 +1,7 @@
 ---
-title: Article
-slug: article
-date: July 11, 2020
+title: Article de test
+slug: article-de-test
+date: November 5, 2020
 category: Nodejs
 ---
 
@@ -66,7 +66,7 @@ du texte normal et avec `du code` au milieu
 `rere`
 
 ```js
-let users = ['Alice', 'Dan', 'Jessica'];
+let users = ['Alice', 'Gabin', 'Jessica'];
 let query = 'A';
 let user = users.filter((user) => user.startsWith(query));
 ```
