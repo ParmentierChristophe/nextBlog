@@ -19,9 +19,9 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - uses: aws-actions/configure-aws-credentials@v1
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'eu-west-3'   # optional: defaults to us-east-1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-3
       - name: Copy files to the production website with the AWS CLI
         run: aws s3 sync ./out s3://blog-next-christophe-parmentier
