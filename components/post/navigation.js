@@ -8,20 +8,24 @@ const Previous = ({ previous, next }) => {
       <div className={style.container}>
         <div className={style.globalPreviousNext}>
           <div className={style.previous}>
-            <p>Previous</p>
             {previous && (
-              <Link href="/[slug]" gray as={`/${previous.slug}`}>
-                ← {previous.title}
-              </Link>
+              <div>
+                <p>Previous</p>
+                <Link href="/[slug]" gray as={`/${previous.slug}`}>
+                  ← {previous.title}
+                </Link>
+              </div>
             )}
           </div>
 
           <div className={style.next}>
-            <p>Next</p>
             {next && (
-              <Link href="/[slug]" gray as={`/${next.slug}`}>
-                {next.title} →
-              </Link>
+              <div>
+                <p>Next</p>
+                <Link href="/[slug]" gray as={`/${next.slug}`}>
+                  {next.title} →
+                </Link>
+              </div>
             )}
           </div>
         </div>

@@ -2,7 +2,11 @@
   margin: 2.1rem auto 0;
   padding: 1rem;
 }
-
+.titleContainer {
+  margin: 0 auto;
+  display: flex;
+  width: var(--main-content);
+}
 .title {
   font-size: 2em;
   margin: 0.67em 0;

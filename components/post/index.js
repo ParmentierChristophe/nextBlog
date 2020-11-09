@@ -13,7 +13,7 @@ const Post = ({ title, slug, html, hidden, description, date, previous, next }) 
           {date && <meta name="date" content={date} />}
         </Head>
         <div className={style.container}>
-          <span>
+          <span className={style.titleContainer}>
             {slug ? (
               <b>
                 <span className={style.title}> {title} </span>
@@ -29,8 +29,8 @@ const Post = ({ title, slug, html, hidden, description, date, previous, next }) 
             }}
           />
         </div>
+        <Navigation previous={previous} next={next} />
       </Page>
-      <Navigation previous={previous} next={next} />
     </div>
   );
 };
