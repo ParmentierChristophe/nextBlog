@@ -45,3 +45,9 @@
   display: flex;
   align-items: center;
 }
+
+.biographyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

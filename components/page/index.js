@@ -7,7 +7,7 @@ const Page = ({ header = true, slug, title, showSlug = true, description, image,
   return (
     <div className={styles.wrapper}>
       <SEO title={`${title ? `${title}` : 'hey !'}`} description={description} image={image} />
-      {showSlug && <Header slug={showSlug && slug} title={showSlug && title} />}
+      {showSlug && <Header />}
       <main className={styles.main}>{children}</main>
       <Footer />
     </div>

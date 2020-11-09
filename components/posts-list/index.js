@@ -7,7 +7,6 @@ const Posts = ({ slug, posts, paginate }) => {
   const [showMore, setShowMore] = useState(3);
 
   return (
-    <>
       <ul className={styles.container}>
         {posts.slice(0, paginate ? showMore : undefined).map((post) => {
           return (
@@ -33,7 +32,6 @@ const Posts = ({ slug, posts, paginate }) => {
           )}
         </div>
       </ul>
-    </>
   );
 };
 
